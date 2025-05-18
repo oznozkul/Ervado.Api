@@ -1,0 +1,21 @@
+services:
+  ervado.api:
+    image: ${DOCKER_REGISTRY-}ervadoapi
+    build:
+      context: .
+      dockerfile: src/Ervado.Api/Dockerfile
+  postgres:
+    image: postgres:15
+    container_name: ervado_postgres
+    restart: always
+    environment:
+      POSTGRES_DB: ErvadoDb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

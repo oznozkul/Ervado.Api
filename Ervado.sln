@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3F98BF5A-D1D9-4389-B130-6452269C5B05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ervado.Domain", "src\Ervado.Domain\Ervado.Domain.csproj", "{1F1B996F-8F48-454E-B762-F3282060C015}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ervado.Application", "src\Ervado.Application\Ervado.Application.csproj", "{244CC4A3-AD2B-41ED-AE72-CC5E5B33756F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ervado.Infrastructure", "src\Ervado.Infrastructure\Ervado.Infrastructure.csproj", "{BFB7A17D-2580-4D7A-B7A0-2B0558DF25F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ervado.Api", "src\Ervado.Api\Ervado.Api.csproj", "{F639A3AF-525C-421F-ACB0-0B0771021644}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{A581BFCE-9B4E-4067-BBB9-B2EF7EABDEDF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F1B996F-8F48-454E-B762-F3282060C015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F1B996F-8F48-454E-B762-F3282060C015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F1B996F-8F48-454E-B762-F3282060C015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F1B996F-8F48-454E-B762-F3282060C015}.Release|Any CPU.Build.0 = Release|Any CPU
+		{244CC4A3-AD2B-41ED-AE72-CC5E5B33756F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{244CC4A3-AD2B-41ED-AE72-CC5E5B33756F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{244CC4A3-AD2B-41ED-AE72-CC5E5B33756F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{244CC4A3-AD2B-41ED-AE72-CC5E5B33756F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFB7A17D-2580-4D7A-B7A0-2B0558DF25F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFB7A17D-2580-4D7A-B7A0-2B0558DF25F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFB7A17D-2580-4D7A-B7A0-2B0558DF25F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFB7A17D-2580-4D7A-B7A0-2B0558DF25F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F639A3AF-525C-421F-ACB0-0B0771021644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F639A3AF-525C-421F-ACB0-0B0771021644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F639A3AF-525C-421F-ACB0-0B0771021644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F639A3AF-525C-421F-ACB0-0B0771021644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A581BFCE-9B4E-4067-BBB9-B2EF7EABDEDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A581BFCE-9B4E-4067-BBB9-B2EF7EABDEDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A581BFCE-9B4E-4067-BBB9-B2EF7EABDEDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A581BFCE-9B4E-4067-BBB9-B2EF7EABDEDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1F1B996F-8F48-454E-B762-F3282060C015} = {3F98BF5A-D1D9-4389-B130-6452269C5B05}
+		{244CC4A3-AD2B-41ED-AE72-CC5E5B33756F} = {3F98BF5A-D1D9-4389-B130-6452269C5B05}
+		{BFB7A17D-2580-4D7A-B7A0-2B0558DF25F8} = {3F98BF5A-D1D9-4389-B130-6452269C5B05}
+		{F639A3AF-525C-421F-ACB0-0B0771021644} = {3F98BF5A-D1D9-4389-B130-6452269C5B05}
+	EndGlobalSection
+EndGlobal
