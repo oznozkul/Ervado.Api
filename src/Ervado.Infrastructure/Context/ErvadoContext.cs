@@ -17,10 +17,6 @@ namespace Ervado.Infrastructure.Context
         {
             base.OnModelCreating(builder);
             
-
-            // bişey sorucam users diye bir tablo yok hatası veriyor ya senin burda yaptığın users tablosunu ıdentitiye mi bağlamak?
-
-            // Identity tablolarının isimlerini özelleştirme
             builder.Entity<IdentityUser>().ToTable("ApplicationUsers");
             builder.Entity<IdentityRole>().ToTable("Roles");
             builder.Entity<IdentityUserRole<string>>().ToTable("UserRoles");

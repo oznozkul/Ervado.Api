@@ -12,7 +12,6 @@ using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllers();
 
 // Configure JWT
@@ -54,11 +53,9 @@ builder.Services.AddAuthentication(options =>
     };
 });
 
-// Add Application and Infrastructure services
 builder.Services.AddApplication();
 builder.Services.AddInfrastructure();
 
-// Configure Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
