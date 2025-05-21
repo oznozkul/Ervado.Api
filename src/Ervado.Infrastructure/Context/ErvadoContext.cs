@@ -12,7 +12,7 @@ namespace Ervado.Infrastructure.Context
         }
 
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
-
+        public DbSet<Domains> Domains { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
