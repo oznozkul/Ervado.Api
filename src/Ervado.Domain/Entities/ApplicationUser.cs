@@ -6,8 +6,7 @@ public class ApplicationUser : IdentityUser
 {
     public string FirstName { get; set; } = string.Empty;
     public string LastName { get; set; } = string.Empty;
-    public int? DomainId { get; set; }
-    public int? CompanyId { get; set; }
+    public int? FirmId { get; set; }
     public int CreatedUserId { get; set; }
     public DateTime CreatedDate { get; set; }
     public int? UpdatedUserId { get; set; }
@@ -15,4 +14,5 @@ public class ApplicationUser : IdentityUser
     public int? DeleteUserId { get; set; }
     public int? DeleteDate { get; set; }
     public bool IsDeleted { get; set; }
+    public Firm Firm { get; set; }
 } 

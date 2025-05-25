@@ -7,12 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Features\Domains\**" />
-    <EmbeddedResource Remove="Features\Domains\**" />
-    <None Remove="Features\Domains\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="14.0.0" />
     <PackageReference Include="MediatR" Version="12.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
@@ -24,6 +18,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Ervado.Domain\Ervado.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Domains\Commands\Delete\" />
+    <Folder Include="Features\Domains\Commands\Update\" />
   </ItemGroup>
 
 </Project>

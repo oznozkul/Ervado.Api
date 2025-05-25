@@ -1,18 +1,29 @@
-﻿using Ervado.Domain.Entities;
+﻿using Ervado.Application.Common.Interfaces;
+using Ervado.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace Ervado.Infrastructure.Context
 {
-    public class ErvadoContext : IdentityDbContext<IdentityUser>
+    public class ErvadoContext : IdentityDbContext<IdentityUser>, IApplicationDbContext
     {
         public ErvadoContext(DbContextOptions<ErvadoContext> options) : base(options)
         {
         }
         
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+        public DbSet<Firm> Firms { get; set; }
         
+        // New entity DbSets
+        public DbSet<Product> Products { get; set; }
+        public DbSet<ProductCategory> ProductCategories { get; set; }
+        public DbSet<Brand> Brands { get; set; }
+        public DbSet<Model> Models { get; set; }
+        public DbSet<Inventory> Inventories { get; set; }
+        public DbSet<StockMovement> StockMovements { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -25,6 +36,11 @@ namespace Ervado.Infrastructure.Context
             builder.Entity<IdentityUserLogin<string>>().ToTable("UserLogins");
             builder.Entity<IdentityRoleClaim<string>>().ToTable("RoleClaims");
             builder.Entity<IdentityUserToken<string>>().ToTable("UserTokens");
+        }
+        
+        public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)
+        {
+            return base.SaveChangesAsync(cancellationToken);
         }
     }
 }
