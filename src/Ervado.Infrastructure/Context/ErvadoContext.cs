@@ -10,8 +10,9 @@ namespace Ervado.Infrastructure.Context
         public ErvadoContext(DbContextOptions<ErvadoContext> options) : base(options)
         {
         }
-
+        
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+        
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
